@@ -15,8 +15,7 @@ const config = {
     hot: true,
     publicPath: '/public/',
     historyApiFallback: true,
-    contentBase: [path.join(__dirname, 'public'), path.join(__dirname)],
-    watchContentBase: true,
+    contentBase: path.join(__dirname),
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],

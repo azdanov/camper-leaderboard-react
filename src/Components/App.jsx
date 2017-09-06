@@ -1,10 +1,13 @@
 // @flow
 
 import React from 'react';
+import Header from './Header';
+import Body from './Body';
 
 const App = () => (
   <main className="container">
-    <h1>Hello</h1>
+    <Header />
+    <Body />
   </main>
 );
 
