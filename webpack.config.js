@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 const config = {
   context: __dirname,
+  target: 'web',
   entry: ['./src/index.jsx'],
   devtool:
     process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
@@ -40,7 +41,7 @@ const config = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-      },
+      }
     ],
   },
 };

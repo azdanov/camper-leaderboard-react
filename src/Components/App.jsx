@@ -1,14 +1,15 @@
 // @flow
 
-import React from 'react';
-import Header from './Header';
+import * as React from 'react';
+import { Container } from 'semantic-ui-react';
+import Head from './Head';
 import Body from './Body';
 
 const App = () => (
-  <main className="container">
-    <Header />
+  <Container textAlign="center">
+    <Head />
     <Body />
-  </main>
+  </Container>
 );
 
 export default App;

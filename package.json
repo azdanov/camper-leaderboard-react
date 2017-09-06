@@ -18,16 +18,21 @@
   "dependencies": {
     "axios": "^0.16.2",
     "cross-env": "^5.0.5",
+    "lodash": "^4.17.4",
     "marked": "^0.3.6",
+    "material-ui": "next",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.72.0",
     "webpack": "^3.5.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
+    "babel-plugin-lodash": "^3.2.11",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
