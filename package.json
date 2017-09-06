@@ -1,0 +1,47 @@
+{
+  "name": "markdown-previewer-react",
+  "version": "0.0.2",
+  "main": "index.js",
+  "repository": "git@github.com:azdanov/markdown-previewer-react.git",
+  "author": "Anton Zdanov <akumael@gmail.com>",
+  "license": "Unlicense",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "build:dev": "cross-env NODE_ENV=development webpack -d",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "lint": "eslint **/*.{js,jsx} --quiet",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest -u"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cross-env": "^5.0.5",
+    "marked": "^0.3.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "next",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-react": "7.3.0",
+    "flow-bin": "^0.54.0",
+    "prettier": "^1.6.1",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
