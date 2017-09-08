@@ -1,5 +1,7 @@
 [ignore]
-
+.*/node_modules/jss/.*
+.*/node_modules/material-ui/.*
+.*/node_modules/react-scrollbar-size/.*
 [include]
 
 [libs]
