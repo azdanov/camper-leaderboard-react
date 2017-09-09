@@ -20,6 +20,14 @@
   margin-left: 10px;
 }
 
+td .ui.header a {
+  display: block;
+}
+
+.ui.left.aligned.header {
+  text-align: center;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -35,5 +43,15 @@
   }
   to {
     -webkit-transform: rotate(359deg);
+  }
+}
+
+@media (min-width: 991px) {
+  td .ui.header a {
+    display: inline;
+  }
+
+  .ui.left.aligned.header {
+    text-align: left;
   }
 }
