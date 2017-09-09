@@ -2,61 +2,32 @@
 
 import _ from 'lodash';
 import * as React from 'react';
-import { Table, Header } from 'semantic-ui-react';
+import { Table, Header, List } from 'semantic-ui-react';
 import axios from 'axios';
-import monthNames from '../Utils/monthNames';
+import { getDate, getTime } from '../Utils/date';
 import ImageModal from './ImageModal';
 
-const tableData = [
-  {
-    username: 'SkyC0der',
-    img: 'https://avatars1.githubusercontent.com/u/24684319?v=4',
-    alltime: 2323,
-    recent: 189,
-    lastUpdate: '2017-09-07T04:51:38.160Z',
-  },
-];
-
-function getTime(dateString) {
-  const date = new Date(dateString);
-  const hours = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
-  const minutes =
-    date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
-  return `${hours}:${minutes}`;
-}
-
-function getDate(dateString) {
-  const date = new Date(dateString);
-  const year = date.getFullYear();
-  const month = monthNames[date.getMonth()];
-  const day = date.getDay() < 10 ? `0${date.getDay()}` : date.getDay();
-  return `${day}-${month}-${year}`;
-}
-
 type State = {
-  column: string | null,
+  column: ?string,
   data: Array<Object>,
-  direction: 'ascending' | 'descending' | 'ascending' | null,
+  direction: ?('ascending' | 'descending'),
 };
 
 class Body extends React.Component<any, State> {
   state = {
     column: null,
-    data: tableData,
+    data: [],
     direction: null,
   };
 
   componentDidMount() {
-    this.fetchData();
+    this.fetchData().then(({ data }) => {
+      this.setState({ data, column: 'recent', direction: 'descending' });
+    });
   }
 
-  fetchData = () => {
-    axios
-      .get(`https://fcctop100.herokuapp.com/api/fccusers/top/recent`)
-      .then(({ data }) => {
-        this.setState({ data });
-      });
-  };
+  fetchData = () =>
+    axios.get(`https://fcctop100.herokuapp.com/api/fccusers/top/recent`);
 
   handleSort = (clickedColumn: string) => () => {
     const { column, data, direction } = this.state;
@@ -64,8 +35,8 @@ class Body extends React.Component<any, State> {
     if (column !== clickedColumn) {
       this.setState({
         column: clickedColumn,
-        data: _.sortBy(data, [clickedColumn]),
-        direction: 'ascending',
+        data: _.sortBy(data, [clickedColumn]).reverse(),
+        direction: 'descending',
       });
       return;
     }
@@ -135,6 +106,21 @@ class Body extends React.Component<any, State> {
             </Table.Row>
           ))}
         </Table.Body>
+        <Table.Footer fullWidth>
+          <Table.Row>
+            <Table.HeaderCell colSpan="4">
+              Built with:
+              <List bulleted horizontal>
+                <List.Item as="a" href="https://facebook.github.io/react/">
+                  React
+                </List.Item>
+                <List.Item as="a" href="https://react.semantic-ui.com/">
+                  Semantic UI React
+                </List.Item>
+              </List>
+            </Table.HeaderCell>
+          </Table.Row>
+        </Table.Footer>
       </Table>
     );
   }

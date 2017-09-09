@@ -2,18 +2,22 @@
   cursor: pointer;
 }
 
-.ui.menu:first-child {
-  margin-top: 20px;
+#app {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .rotating img {
-  animation: rotation 25s infinite linear;
-  -webkit-animation: rotation 25s infinite linear;
+  animation: rotation 40s infinite linear;
+  -webkit-animation: rotation 40s infinite linear;
 }
 
 .ui.secondary.menu .header.item:hover {
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.03);
+  background: transparent;
+}
+
+.ui.horizontal.bulleted.list {
+  margin-left: 10px;
 }
 
 @keyframes rotation {

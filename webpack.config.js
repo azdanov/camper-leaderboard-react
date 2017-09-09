@@ -41,7 +41,7 @@ const config = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-      }
+      },
     ],
   },
 };

@@ -11,9 +11,9 @@ const Head = () => (
         <Divider />
         <Header.Subheader>
           <Image
-            wrapped
+            href="https://www.freecodecamp.org/"
             size="medium"
-            src="https://www.freecodecamp.org/design-style-guide/downloads/freeCodeCamp-alternative.png"
+            src="https://res.cloudinary.com/anton-zdanov/image/upload/v1504940425/camper-leaderboard/freeCodeCamp-alternative.png"
           />
         </Header.Subheader>
       </Header>
@@ -23,7 +23,7 @@ const Head = () => (
         size="tiny"
         className="rotating"
         href="https://facebook.github.io/react/"
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/jhabdas/images/969312/react-logo-1000-transparent.png"
+        src="https://res.cloudinary.com/anton-zdanov/image/upload/v1504940425/camper-leaderboard/react-logo-1000-transparent.png"
       />
     </Menu.Item>
   </Menu>
