@@ -18,6 +18,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "cross-env": "^5.0.5",
+    "enzyme": "^2.9.1",
+    "jest": "21.0.2",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
     "material-ui": "next",
@@ -25,7 +27,7 @@
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.72.0",
+    "semantic-ui-react": "0.73.0",
     "webpack": "^3.5.5"
   },
   "devDependencies": {
@@ -46,7 +48,9 @@
     "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "7.3.0",
     "flow-bin": "^0.54.0",
+    "jest-serializer-enzyme": "^1.0.0",
     "prettier": "^1.6.1",
+    "react-test-renderer": "^15.6.1",
     "webpack-dev-server": "^2.7.1"
   }
 }

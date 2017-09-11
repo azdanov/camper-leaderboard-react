@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Head renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Modal
+    basic={true}
+    closeIcon={true}
+    closeOnDimmerClick={true}
+    closeOnDocumentClick={false}
+    dimmer={true}
+    size="mini"
+    trigger={
+      <Image
+        as="img"
+        className="clickable"
+        size="huge"
+        spaced={true}
+        src="linktoimage"
+        ui={true}
+      />
+    }
+  >
+    <ModalHeader>
+      test
+    </ModalHeader>
+    <ModalContent
+      image={true}
+    >
+      <Image
+        as="img"
+        size="medium"
+        src="linktoimage"
+        ui={true}
+        wrapped={true}
+      />
+    </ModalContent>
+  </Modal>,
+  "nodes": Array [
+    <Modal
+      basic={true}
+      closeIcon={true}
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      dimmer={true}
+      size="mini"
+      trigger={
+        <Image
+          as="img"
+          className="clickable"
+          size="huge"
+          spaced={true}
+          src="linktoimage"
+          ui={true}
+        />
+      }
+    >
+      <ModalHeader>
+        test
+      </ModalHeader>
+      <ModalContent
+        image={true}
+      >
+        <Image
+          as="img"
+          size="medium"
+          src="linktoimage"
+          ui={true}
+          wrapped={true}
+        />
+      </ModalContent>
+    </Modal>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <ImageModal
+        img="linktoimage"
+        username="test"
+      />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "img": "linktoimage",
+          "username": "test",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Modal
+          basic={true}
+          closeIcon={true}
+          closeOnDimmerClick={true}
+          closeOnDocumentClick={false}
+          dimmer={true}
+          size="mini"
+          trigger={
+            <Image
+              as="img"
+              className="clickable"
+              size="huge"
+              spaced={true}
+              src="linktoimage"
+              ui={true}
+            />
+          }
+        >
+          <ModalHeader>
+            test
+          </ModalHeader>
+          <ModalContent
+            image={true}
+          >
+            <Image
+              as="img"
+              size="medium"
+              src="linktoimage"
+              ui={true}
+              wrapped={true}
+            />
+          </ModalContent>
+        </Modal>,
+        "_debugID": 2,
+        "_renderedOutput": <Modal
+          basic={true}
+          closeIcon={true}
+          closeOnDimmerClick={true}
+          closeOnDocumentClick={false}
+          dimmer={true}
+          size="mini"
+          trigger={
+            <Image
+              as="img"
+              className="clickable"
+              size="huge"
+              spaced={true}
+              src="linktoimage"
+              ui={true}
+            />
+          }
+        >
+          <ModalHeader>
+            test
+          </ModalHeader>
+          <ModalContent
+            image={true}
+          >
+            <Image
+              as="img"
+              size="medium"
+              src="linktoimage"
+              ui={true}
+              wrapped={true}
+            />
+          </ModalContent>
+        </Modal>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ImageModal
+    img="linktoimage"
+    username="test"
+  />,
+}
+`;
